@@ -1,38 +1,143 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Event ticketing community</title>
-    
-        <!-- Adding lato font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-    
-    
-        <!-- adding daisyUI cdn -->
-        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    
-        <!-- Adding tailwind config and extends fonts and colors -->
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            lato: ["Lato", "sans-serif"],
-                        },
-                        colors: {
-                            btn: "#0E7A81",
-                            dark: "#131313"
-                        },
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event ticketing community</title>
+
+    <!-- Adding lato font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- adding daisyUI cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Adding tailwind config and extends fonts and colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        lato: ["Lato", "sans-serif"],
+                    },
+                    colors: {
+                        btn: "#0E7A81",
+                        dark: "#131313"
                     },
                 },
-            };
-        </script>
-    </head>
+            },
+        };
+    </script>
+</head>
+
 <body>
-    
+
+    <!-- header section -->
+    <header class="container mx-auto p-10">
+
+        <!-- nav bar section -->
+        <nav class="">
+
+            <!-- nav content -->
+            <div class="flex justify-between items-center">
+
+                <!-- logo -->
+                <img src="assets/logo.webp" alt="">
+
+                <!-- links -->
+                <div class="flex items-center gap-8 mr-36">
+
+                    <a class="font-lato text-left text-dark" href="">Home</a>
+                    <a class="font-lato text-left text-dark" href="">Shop</a>
+                    <a class="font-lato text-left text-dark" href="">Contact</a>
+                </div>
+
+                <!-- profile -->
+                <img src="assets/Frame 4.png" alt="">
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <section class="mt-14">
+
+            <!-- hero content -->
+            <div class="flex flex-col items-center">
+
+                <!-- secondary heading -->
+                <h3 class="font-lato font-bold text-2xl text-dark opacity-60 text-center">Bringing Families Together
+                    ❤️‍🔥 </h3>
+
+                <!-- main heading -->
+                <h1 class="font-lato font-black text-7xl text-dark text-center leading-[88px] mt-4 mb-6">Your Path to
+                    Adoption <br> Starts Here</h1>
+
+                <!-- description -->
+                <p class="font-lato leading-7 text-center text-dark mb-8">It is a long established fact that a reader
+                    will be distracted by the readable content of a page when looking <br> at its layout. The point of
+                    using Lorem Ipsum is that it has a.</p>
+
+                <!-- view more button -->
+                <button onclick="scrollToBestFriend()"
+                    class="font-lato text-white font-bold text-xl text-center bg-btn px-8 py-4 rounded-xl mb-12">View
+                    More</button>
+
+                <!-- banner image -->
+                <img src="assets/pet.webp" alt="">
+            </div>
+        </section>
+    </header>
+
+    <!-- main section -->
+    <main class="container mx-auto p-10 mt-24">
+
+        <!-- main content -->
+        <section id="adopt-section">
+
+            <!-- heading -->
+            <h1 class="font-lato font-black text-4xl text-dark mb-6 text-center">Adopt Your Best Friend</h1>
+
+            <!-- description -->
+            <p class="font-lato leading-7 text-center text-dark opacity-70">It is a long established fact that a reader
+                will be distracted by the readable content of a <br> page when looking at its layout. The point of using
+                Lorem Ipsum is that it has a.</p>
+
+            <!-- category section -->
+            <section id="category-container" class="flex items-center justify-center gap-6 mt-12">
+
+                <!-- this content will be shown from js -->
+
+            </section>
+
+            <!-- deal and sort section -->
+            <section class="flex items-center justify-between my-8">
+
+                <!-- best deal section -->
+                <p class="font-lato font-black text-2xl text-dark">Best Deal For you</p>
+
+                <!-- sort section -->
+                <button class="font-lato font-bold text-left text-xl text-white px-8 py-4 bg-btn rounded-xl">
+                    Sort by Price
+                </button>
+            </section>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+
+    </footer>
+
+
+    <!-- script files -->
+
+    <!-- displayAllCate -->
+    <script src="script/displayAllCate.js"></script>
 </body>
+
 </html>
